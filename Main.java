@@ -10,15 +10,18 @@ class Main {
     System.out.println("2.50 - coconut");
 
     System.out.println("How much money will you be spending today?");
-    int wallet = scan.nextInt();
+    int totalMoney = scan.nextInt();
+
+    double change = cookie(totalMoney);
+    System.out.println("your total change left is" + change); 
   }
 
   static double cookie(int totalMoney) {
     Scanner scan = new Scanner(System.in);
     // print: which flavor would you like?
     // scan to receive flavor & save into variable
-    System.out.println("Which flavor would be best?");
-    int flavor = scan.nextInt();
+    System.out.println("Which flavor would be best? select price of flavor");
+    double flavor = scan.nextDouble();
 
     double change = totalMoney - flavor;
 
