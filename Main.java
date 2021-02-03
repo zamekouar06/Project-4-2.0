@@ -10,36 +10,32 @@ class Main {
     System.out.println("2.50 - coconut");
 
     System.out.println("How much money will you be spending today?");
-    int wallet = scan.nextInt(); 
+    int wallet = scan.nextInt();
   }
 
-
-
-  static String cookie(int totalMoney) {
-    //print: which flavor would you like?
-    //scan to receive flavor & save into variable
+  static double cookie(int totalMoney) {
+    Scanner scan = new Scanner(System.in);
+    // print: which flavor would you like?
+    // scan to receive flavor & save into variable
     System.out.println("Which flavor would be best?");
     int flavor = scan.nextInt();
-    
-    int change = totalMoney - flavor;
 
-    //print: you have this much change left
-    System.out.println(change);
-    //if change > 3 then
+    double change = totalMoney - flavor;
+
+    // print: you have this much change left
+    System.out.println("you have this much left" + change);
+    // if change > 3 then
     if (change > 3) {
 
-      System.out.println("Would you like a another flavor");
-      boolean anotherFlavor = scan.nextBoolean();
+      System.out.println("Would you like any toppings? true/false");
+      boolean toppings = scan.nextBoolean();
+
+      if (true) {
+         change = change - 3;  
+      }
+      
     }
-      //print: would you like another flavor?
-      //scan to receive boolean 
-    //if user said true for yes, then
-    //call the cookie method again..in here
-
-    
+    return change;
   }
-
-
-
 
 }
