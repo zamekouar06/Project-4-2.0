@@ -8,12 +8,20 @@ class Main {
     System.out.println("$1.50 - choclate chip");
     System.out.println("2.00 - pecan bit");
     System.out.println("2.50 - coconut");
+    //The price options enabling the method cookie
 
     System.out.println("How much money will you be spending today?");
     int totalMoney = scan.nextInt();
+    //asking input by the user for how much they have
 
     double change = cookie(totalMoney);
-    System.out.println("your total change left is" + change); 
+    System.out.println("your total change left is " + change); 
+    //giving the user there total change of the full purchase
+     System.out.println("decaf");
+    System.out.println("dark roast");
+    System.out.println("frappuccino");
+    
+    System.out.println("Which coffe would be best to go with your cookie?");
   }
 
   static double cookie(int totalMoney) {
@@ -26,7 +34,7 @@ class Main {
     double change = totalMoney - flavor;
 
     // print: you have this much change left
-    System.out.println("you have this much left" + change);
+    System.out.println(" you have this much left " + change);
     // if change > 3 then
     if (change > 3) {
 
@@ -40,5 +48,7 @@ class Main {
     }
     return change;
   }
+  static coffe(int totalCurrency){
+  }  
 
 }
